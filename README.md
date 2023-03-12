@@ -1,6 +1,7 @@
 # Oracle-database-for-Dark-Springs-Bottled-Water-company
 Database: Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 – Production.   
 Syntax: SQL, PL/SQL.  
+ERD tool: Oracle data modeler.  
 Business Summary:
 * Dark Springs specialized in delivering bottled water to customers. It needs a database to manage the orders and make sure the customers never run out of water.   
 * Dark Springs uses information from customers to estimate initial monthly usage and monthly cost and schedule enough deliveries.  After that, weekly usage of water of each customer will be estimated, and then scheduled delivery for water coolers.    
