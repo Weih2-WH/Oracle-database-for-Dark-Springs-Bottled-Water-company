@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Employee_Contract_service" directorySegmentName="seg_0" id="118247B3-0ED0-3AFE-4923-B7EB10D169C9">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 22:14:43 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<sourcePk>4F26A7F2-ECB0-ADDE-13FC-5051E282EA1F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B63D608B-B25C-4A5E-37B4-7442E23B0BAA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1BC638A9-E468-EB4F-C0EE-1DCC14BB0983</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

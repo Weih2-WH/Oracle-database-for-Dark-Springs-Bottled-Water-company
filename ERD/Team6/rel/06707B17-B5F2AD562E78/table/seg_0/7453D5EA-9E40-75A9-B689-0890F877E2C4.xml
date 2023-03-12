@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7453D5EA-9E40-75A9-B689-0890F877E2C4" name="Route">
+<createdBy>ysf</createdBy>
+<createdTime>2023-02-22 03:09:37 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="route_id" id="B994BEF3-FEBF-D565-AEE6-ADAB018F7067">
+<createdBy>ysf</createdBy>
+<createdTime>2023-02-22 03:10:21 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_id" id="18728995-BAC2-0091-9AAE-2630F43E4354">
+<createdBy>ysf</createdBy>
+<createdTime>2023-02-25 03:57:27 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2948C78F-5D8E-8EDE-E70E-6137A7BD6706" referredColumn="220E8602-9269-6178-6715-3712886BA0B9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0A6038C9-C75D-0A36-407D-8944EBAAE1BD" name="Route_PK">
+<createdBy>ysf</createdBy>
+<createdTime>2023-02-22 03:13:18 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B994BEF3-FEBF-D565-AEE6-ADAB018F7067"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5BBD350E-AD11-CFED-9875-98567FAD8688" name="Route_Employee_FK">
+<createdBy>ysf</createdBy>
+<createdTime>2023-02-25 03:57:27 UTC</createdTime>
+<generatorID>4F26A7F2-ECB0-ADDE-13FC-5051E282EA1F</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18728995-BAC2-0091-9AAE-2630F43E4354"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

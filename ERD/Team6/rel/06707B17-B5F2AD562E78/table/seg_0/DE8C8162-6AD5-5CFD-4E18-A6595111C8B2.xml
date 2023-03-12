@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DE8C8162-6AD5-5CFD-4E18-A6595111C8B2" name="PickupDetail">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>6F4A639B-055C-C401-E370-060CCCD122AB</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="quantity" id="664E6FC1-E3FB-6F87-562A-E61FA2361EBB">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[pick up number from customer]]></commentInRDBMS>
+<generatorID>4816FF02-A7AC-73C9-BF05-8914E7139DC1</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pickup_id" id="938C8DB7-286D-5E50-2848-E4F2E59471C4">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique ID for each pick up by customer]]></commentInRDBMS>
+<generatorID>D078C7CA-3A20-237D-F097-BCE3F462423C</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_comments" id="EB014126-40B5-3ED6-CEBD-0B9CEB3D1A7B">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer comments]]></commentInRDBMS>
+<generatorID>D15009BB-AF4B-8CE2-2FB2-CF87CE9E1585</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Delivery_delivery_id" id="FAE88E5B-4A03-6999-6774-FB5A355FB480">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>3DB80721-4ABB-01EE-466D-93770C9A5464</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="660E062D-BCBA-497B-F9DE-54729935C1C9" referredColumn="890FDCD4-9C47-2B89-3F5C-663A54BE87BA"/>
+</associations>
+</Column>
+<Column name="Product_product_id" id="3C06A3CC-DAB9-6A0E-3385-B47D4D61E780">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>750AB473-9829-2217-6C02-23F9E6C1875F</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1DEB68D6-375F-F9FD-82BC-2AEB01680733" referredColumn="D8FDF662-B6F0-D6A6-C850-A2108F6DB30F"/>
+</associations>
+</Column>
+<Column name="status" id="DFF37709-0303-398F-C20D-C919F8A57CBD">
+<createdBy>ysf</createdBy>
+<createdTime>2023-02-23 21:09:21 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="15AD841E-A6D5-4D8F-8D46-B45FA747F1C8" name="PickupDetail_PK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>244697CB-7120-B402-B434-6C0DBC395BF9</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="938C8DB7-286D-5E50-2848-E4F2E59471C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="06A9629E-7C10-9090-EB77-26987481D878" name="PickupDetail_Delivery_FK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>9201F6A9-A5BE-94C2-30CE-8FE274865E06</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FAE88E5B-4A03-6999-6774-FB5A355FB480"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="346B56F0-F616-7935-80B4-566D73F786A9" name="PickupDetail_Product_FK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:36 UTC</createdTime>
+<generatorID>33932301-1C1E-0EFD-D118-AD81B1AC1DB6</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C06A3CC-DAB9-6A0E-3385-B47D4D61E780"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

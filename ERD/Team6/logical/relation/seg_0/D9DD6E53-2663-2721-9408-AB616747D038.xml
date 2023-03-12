@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Evaluation_Employee_rule" directorySegmentName="seg_0" id="D9DD6E53-2663-2721-9408-AB616747D038">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 17:25:02 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<sourcePk>80BDF927-1FDD-96B1-196C-629B3236C693</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C8450D8A-F6CA-F94F-CE0E-6EA2DCF7D157</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B63D608B-B25C-4A5E-37B4-7442E23B0BAA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

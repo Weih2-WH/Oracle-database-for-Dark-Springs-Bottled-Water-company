@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0C8ACBE8-730C-4B95-0FB2-7445F80A79FB" name="Leads">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 06:00:20 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="type" id="4F139556-7E67-0D7C-0739-C45F824B2DE9">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 06:00:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Type of leads(service organization, department in same company, department in new company, large corporation)]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date" id="4020B002-95CB-DA4F-1880-800DCC73E7AD">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 06:00:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[lead date]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lead_id" id="CBB6BD89-FDBF-FFD8-3CCC-481A2185585D">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 06:00:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique ID for leading.]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_id" id="8AB03E2B-7144-7A36-E08C-C3085FC9B2E0">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 22:08:53 UTC</createdTime>
+<generatorID>236D7BE0-7FDD-F1C6-88B7-0AEBF9348338</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<referedAttribute>AE9E3203-B508-DB0E-DD02-7542D7F56840</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="customer_id" id="E4ACF312-1E30-AED9-8583-57E964B2BB75">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 22:11:04 UTC</createdTime>
+<generatorID>ED47F6DF-54B0-A8A4-310F-B126EA0618F6</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<referedAttribute>1DB3C364-FFAA-A791-7AD6-9C013A41295C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="87A043AF-73DB-266E-D906-3B0A7D900440" name="Leads PK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 06:01:25 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CBB6BD89-FDBF-FFD8-3CCC-481A2185585D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

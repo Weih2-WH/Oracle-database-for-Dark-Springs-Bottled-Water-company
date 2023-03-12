@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1368F1C0-78BE-2B17-22D1-D396B24BA2A6" name="BillDetail">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>61010A5F-DBC4-1A70-6F70-D1F83A33BD8F</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="bill_detail_id" id="D3F0D19C-1211-A318-CB42-A3C61D5B1590">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique Id for each bill detail.]]></commentInRDBMS>
+<generatorID>8DA7DC66-14C9-42CB-9CF8-B14E99476C35</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Bill_bill_id" id="090FA925-207B-5E11-3FE0-76F03B7704CE">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>1432E133-F36D-5B71-3DE4-CFC4B8487BBA</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5683F8E2-D2E2-1027-EB7D-21321ACAC0E7" referredColumn="CA77EC38-7D8C-683E-36CD-BA4148BF62A2"/>
+</associations>
+</Column>
+<Column name="Delivery_delivery_id" id="8DEE75F4-40CC-C2CD-98DB-7BD4A209B524">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>4437DEFD-4B14-1E45-2295-18A721FD312A</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC27829C-C991-81CC-18BB-997B96AAFAB9" referredColumn="890FDCD4-9C47-2B89-3F5C-663A54BE87BA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4C76162D-6FE6-0FEE-72D6-6997EE489F83" name="BillDetail_PK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>A28E0C95-1630-F51E-0B2A-ED5A114099AA</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3F0D19C-1211-A318-CB42-A3C61D5B1590"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9231CE82-3C6D-BF49-774B-1EC61946B894" name="BillDetail_Bill_FK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>DD96EC54-A194-1923-0134-A464B4A635E7</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="090FA925-207B-5E11-3FE0-76F03B7704CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC61D1C0-D29A-39F5-DD26-0E4C111AEDCC" name="BillDetail_Delivery_FK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>4A0E3877-1DC1-DF7E-BB30-8F8AD83DD998</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DEE75F4-40CC-C2CD-98DB-7BD4A209B524"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

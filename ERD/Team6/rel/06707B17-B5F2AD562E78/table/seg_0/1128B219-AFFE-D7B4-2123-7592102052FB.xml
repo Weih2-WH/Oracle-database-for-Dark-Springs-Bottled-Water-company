@@ -1,0 +1,194 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1128B219-AFFE-D7B4-2123-7592102052FB" name="ServiceDetail">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>CC714C0E-C86C-B9DB-2450-FE491EB3666F</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="service_id" id="0429A2CA-E672-CD02-1E21-BA4E1CD8437C">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique ID for the location this company served.]]></commentInRDBMS>
+<generatorID>5341F87B-ABC1-6ADF-AB7C-08C45793230D</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="A073C0E2-4D4B-B1E0-CD33-0204AAEEF275">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Delivered location contactor's last name.]]></commentInRDBMS>
+<generatorID>852F4D57-7CB5-9B12-715E-31AACF52A9B0</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_name" id="3A142F9A-B642-40D3-A8DA-F1730FF3ED40">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Delivered location contactor's first name.]]></commentInRDBMS>
+<generatorID>64FD780D-4DEE-97F5-E184-E5F8843563D9</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street_address" id="C8EEE28A-E776-3B16-26FE-87E9E906D115">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Delivered street address]]></commentInRDBMS>
+<generatorID>C3846F10-86AC-8F7A-DB25-9BD982F69102</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="city" id="3B1A2F53-AF03-B130-EA8C-73FFF5DB8A3C">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[City or town where the product delivered.]]></commentInRDBMS>
+<generatorID>46A0AA8A-8130-E956-3CB3-FDC2091F50E6</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="state" id="D4080F78-A11E-19F8-2011-25E2A1A61709">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[2-letter code for the state where the product delivered.]]></commentInRDBMS>
+<generatorID>131E6A9F-FE4B-8FCD-4D90-7C12E2E7081C</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="zip" id="C420CDF1-6A4C-B899-E798-41D44EDCB0B1">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Postal code where the product delivered.]]></commentInRDBMS>
+<generatorID>6752F0D5-E986-E9CD-4001-4DC03F677D78</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone" id="2BF13B56-4027-445F-F5EA-69559C922E86">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contact number of the delivered location.]]></commentInRDBMS>
+<generatorID>C1F473A2-4F82-D55E-632B-35CA5A28FAFC</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="room" id="2C0A46CC-D2EA-6359-D437-D107BD9C9A69">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Product delivered room.]]></commentInRDBMS>
+<generatorID>F00E74F9-E021-9474-8F3B-193297E48CF3</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customer_customer_id" id="4CD46E5F-547B-8A0D-A92D-27284E4D69E5">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>4698F8EC-9067-F4C6-C59B-C1C2846278DF</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DBDAB43-E40F-0B8D-81FF-FF210A7A3DAD" referredColumn="6CF2EEC5-57B7-160A-6E3A-71874849C2CC"/>
+</associations>
+</Column>
+<Column name="route_id" id="CF0FF1B1-ECF2-AB48-EDFF-7EA66B937D4C">
+<createdBy>ysf</createdBy>
+<createdTime>2023-02-25 05:09:01 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5FE1E51D-5BC9-C5FE-6DF9-6160AECBF37B" referredColumn="B994BEF3-FEBF-D565-AEE6-ADAB018F7067"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A6A9A3AB-BA93-D449-CAE8-4104B36B6730" name="ServiceDetail_PK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>51E62190-2708-527D-90F7-574558C4FEBA</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0429A2CA-E672-CD02-1E21-BA4E1CD8437C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E1683809-264C-DEC3-361A-0A0993AEFCB1" name="ServiceDetail_Customer_FK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>4A205363-5FC2-5F61-0E9A-B02560FFE585</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CD46E5F-547B-8A0D-A92D-27284E4D69E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17D44FCD-8B33-EB31-2781-A2187BE9ABCC" name="ServiceDetail_Route_FK">
+<createdBy>ysf</createdBy>
+<createdTime>2023-02-25 05:09:01 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF0FF1B1-ECF2-AB48-EDFF-7EA66B937D4C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

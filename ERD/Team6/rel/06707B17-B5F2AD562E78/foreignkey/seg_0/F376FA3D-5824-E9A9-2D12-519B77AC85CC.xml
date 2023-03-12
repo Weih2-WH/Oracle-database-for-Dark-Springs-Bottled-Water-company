@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F376FA3D-5824-E9A9-2D12-519B77AC85CC" containerWithKeyObject="489B3F20-4268-8710-1BE3-B1ED558F6680" localFKIndex="F2FEEAF3-ED58-3421-422E-5DF8E19B2647" name="Employee_EvaluationWeight_FK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:36 UTC</createdTime>
+<generatorID>D9DD6E53-2663-2721-9408-AB616747D038</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<referredTableLongName>EvaluationWeight</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>46E2D00D-0A4A-B241-E300-70B3C7D42590</referredTableID>
+<keyObject>50713DEB-5D70-697E-8C48-435EB0C6D5AB</keyObject>
+<referredKeyID>50713DEB-5D70-697E-8C48-435EB0C6D5AB</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>weight_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

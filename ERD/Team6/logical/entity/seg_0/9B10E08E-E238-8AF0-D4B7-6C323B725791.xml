@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9B10E08E-E238-8AF0-D4B7-6C323B725791" name="Product">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 22:25:51 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="product_id" id="E5B2F5A1-C1FC-B3FB-1C06-5B2F084B7ADE">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 22:28:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique Id for product]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="price" id="E9C9DC60-DE86-1B10-85DF-47330DB40B7B">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 22:28:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sale price for the product]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9E874CC9-B3D4-F91E-BF53-D080A9258939" name="Product PK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 22:30:49 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E5B2F5A1-C1FC-B3FB-1C06-5B2F084B7ADE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

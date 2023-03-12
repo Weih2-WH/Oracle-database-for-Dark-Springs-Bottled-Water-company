@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="24CF1681-C16B-8171-2340-5B6D9D23E5E7" name="Bill">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 21:23:46 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="total_amount" id="474859BA-64DD-21C3-F423-05A858FDA6B9">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 21:23:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Total pay amount for the bill.]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pay_date" id="1C9B306C-FB52-9761-C346-4FB56EBC5B66">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 21:23:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date this bill has been payed.]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="due_date" id="A22A07F8-3CC7-4B88-5B61-64D29C46E44F">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 21:23:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Bill due date]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bill_id" id="CA61FFF2-F528-66A6-C0B5-BB3BF359C390">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 21:23:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique Id of each monthly bill]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="payed_amount" id="FC9F09D4-7F26-CF8D-DAF8-A0D02F6C6305">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 21:49:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[The amount that customer payed in this period.]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contract_id" id="C0B50863-CDBB-92F6-5A71-4BA8B29756D0">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 22:33:16 UTC</createdTime>
+<generatorID>FF114269-BA33-462A-E4AE-18CA4646DFEF</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<referedAttribute>255D8CEB-974A-EC3B-7C3D-57419DE863B5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7735AD1C-427A-E34D-3922-EA0D1C1D86F2" name="bill PK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 21:52:11 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CA61FFF2-F528-66A6-C0B5-BB3BF359C390</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

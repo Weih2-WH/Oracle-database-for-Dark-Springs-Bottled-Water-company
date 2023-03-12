@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="45364FA5-CFF6-EC24-E90F-BF2C50C5B0E8" name="Bill">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>24CF1681-C16B-8171-2340-5B6D9D23E5E7</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="total_amount" id="3204169F-8C91-3A95-F643-4CF782150A91">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Total pay amount for the bill.]]></commentInRDBMS>
+<generatorID>474859BA-64DD-21C3-F423-05A858FDA6B9</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pay_date" id="D23D6BCE-8B97-FD88-A715-1A6F94B5C03B">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date this bill has been payed.]]></commentInRDBMS>
+<generatorID>1C9B306C-FB52-9761-C346-4FB56EBC5B66</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="due_date" id="3F5CD804-BB5F-2969-8A40-3B97D5E607D5">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Bill due date]]></commentInRDBMS>
+<generatorID>A22A07F8-3CC7-4B88-5B61-64D29C46E44F</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bill_id" id="CA77EC38-7D8C-683E-36CD-BA4148BF62A2">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique Id of each monthly bill]]></commentInRDBMS>
+<generatorID>CA61FFF2-F528-66A6-C0B5-BB3BF359C390</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contract_contract_id" id="CC6A57AE-6F23-7C0D-57FF-FF1C1B6805A9">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>C0B50863-CDBB-92F6-5A71-4BA8B29756D0</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FE6C254C-B2E9-5AD2-6EBE-ED232EA8CBC6" referredColumn="531C0106-CF54-88C2-8A38-55A79B2FAF69"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9A908811-15E7-7CEF-7E83-48043461E53F" name="Bill_PK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>7735AD1C-427A-E34D-3922-EA0D1C1D86F2</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA77EC38-7D8C-683E-36CD-BA4148BF62A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC529260-1C3B-73F9-0751-47BE06C8B101" name="Bill_Contract_FK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>FF114269-BA33-462A-E4AE-18CA4646DFEF</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC6A57AE-6F23-7C0D-57FF-FF1C1B6805A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

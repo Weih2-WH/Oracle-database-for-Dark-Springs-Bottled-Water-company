@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E0124433-4E35-2E53-7C19-09E1BA1AA28F" name="Customer">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:24:46 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="company" id="FC82C063-02F2-1499-BDC8-CBB058BD7170">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:25:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer company name]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="customer_id" id="1DB3C364-FFAA-A791-7AD6-9C013A41295C">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:25:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique ID for all the customer in the company]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="num_employee" id="98FFD143-7523-2425-DCE4-4223146088C0">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:25:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[number of employee in the company used to estimate the usage of water]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street_address" id="598071F0-94A2-39BD-EF94-798BD73AF345">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:25:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Company's street address(bill)]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="city" id="8AE848EA-26C3-B92A-0F96-D0D9C75511A9">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:25:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[City or town where the company is.(bill)]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="state" id="A4A9D283-6C48-51AC-49E8-6E53B8AE44E0">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:25:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[2-letter code for the state where the company is.(bill)]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="zip" id="0955914C-C34F-402F-F6DC-4D36DD2C5691">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:25:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Postal code where the company is.(bill)
+]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bonus" id="EAF422B4-BF5C-4A1A-B089-4A715DEF0613">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:25:02 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="first_name" id="FF771A3B-C886-FFC6-89FD-0C609460206A">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:33:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contact person's name of the company]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Phone" id="01B25E6C-5F66-328C-A6E0-71BBE5F8F0FD">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:34:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contact number of company(bill)]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last_name" id="5499312E-C274-C7D3-B16C-9C5D43FD3E05">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:35:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contact person's last name]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Email" id="4CA19084-1669-9B8C-73B8-4954759E8352">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:38:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contact email]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="type" id="E3A332FB-9766-4BC2-24DE-E8631B820EF7">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 05:59:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer type(large,small)]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="referee_id" id="11857CA1-D285-7B96-7908-FDFCEDC6422B">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 17:35:10 UTC</createdTime>
+<generatorID>016460AF-C5C7-9F11-8E5A-1916F66D01B4</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>1DB3C364-FFAA-A791-7AD6-9C013A41295C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E614F3E3-2F5F-0298-7593-92531C5DD4E4" name="customer PK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 22:09:02 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1DB3C364-FFAA-A791-7AD6-9C013A41295C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

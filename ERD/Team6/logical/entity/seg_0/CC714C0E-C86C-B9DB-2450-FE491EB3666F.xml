@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CC714C0E-C86C-B9DB-2450-FE491EB3666F" name="ServiceDetail">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:39:33 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="service_id" id="5341F87B-ABC1-6ADF-AB7C-08C45793230D">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:40:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique ID for the location this company served.]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last_name" id="852F4D57-7CB5-9B12-715E-31AACF52A9B0">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:40:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Delivered location contactor's last name.]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="first_name" id="64FD780D-4DEE-97F5-E184-E5F8843563D9">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:40:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Delivered location contactor's first name.]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street_address" id="C3846F10-86AC-8F7A-DB25-9BD982F69102">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:40:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Delivered street address]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="city" id="46A0AA8A-8130-E956-3CB3-FDC2091F50E6">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:40:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[City or town where the product delivered.]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="state" id="131E6A9F-FE4B-8FCD-4D90-7C12E2E7081C">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:40:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[2-letter code for the state where the product delivered.]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="zip" id="6752F0D5-E986-E9CD-4001-4DC03F677D78">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:40:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Postal code where the product delivered.]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phone" id="C1F473A2-4F82-D55E-632B-35CA5A28FAFC">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:44:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contact number of the delivered location.]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="room" id="F00E74F9-E021-9474-8F3B-193297E48CF3">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:56:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Product delivered room.]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="customer_id" id="4698F8EC-9067-F4C6-C59B-C1C2846278DF">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 22:12:24 UTC</createdTime>
+<generatorID>4A205363-5FC2-5F61-0E9A-B02560FFE585</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<referedAttribute>1DB3C364-FFAA-A791-7AD6-9C013A41295C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="51E62190-2708-527D-90F7-574558C4FEBA" name="ServiceDetail PK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:42:41 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5341F87B-ABC1-6ADF-AB7C-08C45793230D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

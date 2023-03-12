@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C8450D8A-F6CA-F94F-CE0E-6EA2DCF7D157" name="EvaluationWeight">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 17:12:39 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="weight_id" id="45D6E9CD-CD02-67E5-03F1-E94F88C1176D">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 17:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique ID for weight]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="deliveries" id="64C629D3-08D0-25DB-6E8E-6698A287D0DD">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 17:13:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Delivery weight]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sales" id="49248CE5-7F02-C0DF-1BD7-149F8C7A873D">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 17:13:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sales weight]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="leads" id="A73245E4-787E-BAAA-B364-3B9B778AF0C4">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 17:13:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Lead weight]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="80BDF927-1FDD-96B1-196C-629B3236C693" name="EvaluationWeight PK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 17:13:09 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>45D6E9CD-CD02-67E5-03F1-E94F88C1176D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

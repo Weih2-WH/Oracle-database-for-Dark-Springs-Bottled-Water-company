@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0251627E-F53F-730C-E7B9-AF86879DE23F" name="Evaluation">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 16:46:38 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="evaluation_id" id="702BCDC5-5EA5-0CF7-6EE7-FCF38568E975">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 16:46:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique ID of evaluation record]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="evaluation_date" id="03BF28C2-3E6D-A6CA-8768-F9DEE36BD057">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 16:46:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[evaluation date]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total" id="430C7AE4-F2CF-C4F4-5286-BFCA4EFA18B5">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 16:46:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Total evaluation score.]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comments" id="EA656E15-6D3C-094C-CADC-F45B8130AF96">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 16:46:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Comments]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_id" id="1B0B88F3-D510-7BB5-B6A8-62307C0F078C">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 17:20:11 UTC</createdTime>
+<generatorID>80D2AF0F-6F91-15DB-B496-F0B52E2D6F86</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<referedAttribute>AE9E3203-B508-DB0E-DD02-7542D7F56840</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="acc_score" id="330E7ED2-88AC-75FD-6672-987E8FB28B09">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 17:27:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Accumulated monthly evaluation score.]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0C16C39C-BC4D-C512-7DDB-B003AF81F2DD" name="Evaluation PK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 16:47:07 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>702BCDC5-5EA5-0CF7-6EE7-FCF38568E975</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

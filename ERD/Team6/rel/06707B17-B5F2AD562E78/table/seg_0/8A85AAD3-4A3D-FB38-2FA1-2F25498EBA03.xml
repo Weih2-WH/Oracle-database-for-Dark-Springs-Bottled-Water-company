@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8A85AAD3-4A3D-FB38-2FA1-2F25498EBA03" name="Delivery">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>88A899DC-8C5B-87E2-239C-2DB1DD4439F5</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="delivery_id" id="890FDCD4-9C47-2B89-3F5C-663A54BE87BA">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique ID for delivery.]]></commentInRDBMS>
+<generatorID>E213A6F2-0487-705A-33A2-CBF42B183398</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Vehicle_vehicle_id" id="786B19B9-788A-146B-79D4-C184D9E6433E">
+<createdBy>ysf</createdBy>
+<createdTime>2023-02-24 03:38:24 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5654451D-01A1-1C1F-492D-8F8850F3FFFE" referredColumn="9B9CB2AD-EB7D-7028-50BE-14A64AB3F049"/>
+</associations>
+</Column>
+<Column name="assigned_date" id="196EDD61-E3AD-8AFB-6C2B-EFC979B08CC4">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date that assigned the route.]]></commentInRDBMS>
+<generatorID>2DC5EB05-299D-0E81-B231-D16F32B486C2</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="arrived_time" id="60E23709-0C60-FC53-1DF9-5FF76FA7C08B">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Delivery arrived time.]]></commentInRDBMS>
+<generatorID>C5FDA1CB-A714-47A5-C5A3-C4D26222DFC9</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="departed_time" id="42CAA0AA-A1B2-BD17-C85E-36FB420FE9B7">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Delivery departed time.]]></commentInRDBMS>
+<generatorID>BBAAEE76-205C-0CDE-FC06-66F6A3C3493C</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contract_contract_id" id="127B0042-3E67-B518-7D41-4A5BCA142AE9">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>6D989B7A-7A30-16BC-3033-DCD39D492695</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CBC1F825-8FB7-D3D2-172C-C4AE7AEB81F2" referredColumn="531C0106-CF54-88C2-8A38-55A79B2FAF69"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="77F909D6-9C42-802C-6B4E-254089047082" name="Delivery_PK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>45C22C66-FCF6-3FC7-4680-10E7C5A95221</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="890FDCD4-9C47-2B89-3F5C-663A54BE87BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E19CE462-A8E4-85BB-AEBB-8DE54A096605" name="Delivery_Contract_FK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:26:35 UTC</createdTime>
+<generatorID>EA04DC5F-3F51-DD53-AE23-46486A442F4A</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="127B0042-3E67-B518-7D41-4A5BCA142AE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4871371-A1A8-7256-3890-7A2912628043" name="Delivery_Vehicle_FK">
+<createdBy>ysf</createdBy>
+<createdTime>2023-02-24 03:38:24 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="786B19B9-788A-146B-79D4-C184D9E6433E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

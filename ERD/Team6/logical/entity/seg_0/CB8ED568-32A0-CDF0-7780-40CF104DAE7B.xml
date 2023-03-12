@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CB8ED568-32A0-CDF0-7780-40CF104DAE7B" name="ContractDetail">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:57:44 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="contract_detail_id" id="36F25116-ACEA-15F3-510A-FFC8A2234C80">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 04:58:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique ID for each contract detail.]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contract_id" id="8D0EAAD4-6817-4F42-DCBB-7BA683BEF55E">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 22:15:33 UTC</createdTime>
+<generatorID>C044EF49-7432-AB6A-390D-64D2F83B76C4</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<referedAttribute>255D8CEB-974A-EC3B-7C3D-57419DE863B5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="product_id" id="D38F80FB-131A-54C9-89BA-F9E8293478DB">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 22:30:53 UTC</createdTime>
+<generatorID>80B0CD76-3DFE-4309-CF06-7997091F131A</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<referedAttribute>E5B2F5A1-C1FC-B3FB-1C06-5B2F084B7ADE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6100ED46-431B-EFBA-E44C-58CAB9D293E9" name="ContractDetail PK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 22:09:27 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>36F25116-ACEA-15F3-510A-FFC8A2234C80</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

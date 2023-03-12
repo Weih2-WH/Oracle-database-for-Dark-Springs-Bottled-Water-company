@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="61010A5F-DBC4-1A70-6F70-D1F83A33BD8F" name="BillDetail">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 21:50:47 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="bill_detail_id" id="8DA7DC66-14C9-42CB-9CF8-B14E99476C35">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 21:50:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique Id for each bill detail.]]></commentInRDBMS>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bill_id" id="1432E133-F36D-5B71-3DE4-CFC4B8487BBA">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 22:34:07 UTC</createdTime>
+<generatorID>DD96EC54-A194-1923-0134-A464B4A635E7</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<referedAttribute>CA61FFF2-F528-66A6-C0B5-BB3BF359C390</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="delivery_id" id="4437DEFD-4B14-1E45-2295-18A721FD312A">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-11 18:14:52 UTC</createdTime>
+<generatorID>4A0E3877-1DC1-DF7E-BB30-8F8AD83DD998</generatorID>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<referedAttribute>E213A6F2-0487-705A-33A2-CBF42B183398</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A28E0C95-1630-F51E-0B2A-ED5A114099AA" name="BillDetail PK">
+<createdBy>weihuang</createdBy>
+<createdTime>2023-02-05 21:51:09 UTC</createdTime>
+<ownerDesignName>Team6</ownerDesignName>
+<engineerTo>
+<item key="06707B17-D6B4-1654-E691-B5F2AD562E78" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8DA7DC66-14C9-42CB-9CF8-B14E99476C35</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
