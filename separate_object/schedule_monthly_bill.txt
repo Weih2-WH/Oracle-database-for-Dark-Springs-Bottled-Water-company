@@ -1,0 +1,46 @@
+/*
+The monthly fee will be charged every month when a customer has ordered and received any products of 
+our company according to the amount in the contract based on the deliver location.
+
+If a customer has not ordered any, then we will not charge on this customer. 
+If a customer has ordered some products, no matter how many, the charge will be added on total amount
+(including the product price and the monthly fee).
+*/
+
+create or replace procedure isnert_bill_procedure(
+    original_amount out number, 
+    renewed_amount out number,
+    v_date in out date,
+    cur_date in out date) as
+    cursor c_month_fee is 
+    select c.contract_id, c.monthly_fee, b.bill_id, b.total_amount, b.due_date
+    from bill b  
+    join contract c 
+    on b.contract_contract_id = c.contract_id;
+
+begin
+     select TRIM(LEADING '0' FROM TO_CHAR(sysdate, 'MM-YYYY')) into v_date from dual;
+     
+     for con in c_month_fee loop
+        cur_date := TRIM(LEADING '0' FROM TO_CHAR(con.due_date, 'MM-YYYY'));
+        if cur_date = v_date then
+            original_amount := con.total_amount + con.monthly_fee;
+            renewed_amount := original_amount + con.monthly_fee;
+        end if;
+        update bill set bill.total_amount = renewed_amount where bill.bill_id = con.bill_id;
+     end loop;
+end;
+
+BEGIN DBMS_SCHEDULER.DROP_JOB('monthly_bill_generate');
+END;
+
+
+begin
+  dbms_scheduler.create_job(
+  job_name   => 'monthly_bill_generate',
+  job_type   => 'STORED_PROCEDURE',
+  job_action => 'insert_bill_procedure',
+  start_date =>  SYSDATE,
+  repeat_interval => 'FREQ = MONTHLY; INTERVAL = 1',
+  comments   => 'monthly_bill');
+end;

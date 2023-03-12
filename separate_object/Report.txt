@@ -1,0 +1,28 @@
+This report enables managers to track the number of contracts brought to the company by each employee according to their lead.;
+Select to_char(c.contract_date,'YYYY-mm') as contract_month ,l.employee_employee_id as employee_id,e.first_name,e.last_name,count(c.contract_id) as num_contract
+From Leads l
+Inner join 
+Employee e
+on l.employee_employee_id = e.employee_id
+inner join
+Customer cu
+On l.customer_customer_id = cu.customer_id
+Inner join 
+Contract c
+On cu.customer_id = c.Customer_customer_id
+Group by l.employee_employee_id,to_char(c.contract_date,'YYYY-mm'),e.first_name,e.last_name
+order by 2,1;
+
+
+
+This report enables managers to track the amount brought to the company by each salesmen.
+Select to_char(c.contract_date,'YYYY-mm') as contract_month,e.first_name, e.last_name,  sum(b.total_amount) as amount
+From Employee e
+Inner join 
+Contract c
+On e.employee_id = c.employee_employee_id
+Inner join 
+Bill b 
+On b.contract_contract_id = c.contract_id
+Group by e.first_name, e.last_name, to_char(c.contract_date,'YYYY-mm') 
+order by 1,2,3;

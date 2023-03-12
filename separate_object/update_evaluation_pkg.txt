@@ -1,0 +1,77 @@
+CREATE OR REPLACE PACKAGE update_evaluation_pkg AS
+
+  -- Procedure to update evaluation and evaluation details of a specific employee
+  -- input employee id to calculate his new evaluation score with new input weights
+  PROCEDURE update_evaluation (
+    p_employee_id IN NUMBER,
+    p_new_deliveries_weight IN NUMBER, -- new deliveries weight in evaluationWeight
+    p_new_sales_weight IN NUMBER, -- new sales weight in evaluationWeight
+    p_new_leads_weight IN NUMBER -- new leads weight in evaluationWeight
+  );
+
+END update_evaluation_pkg;
+/
+
+CREATE OR REPLACE PACKAGE BODY update_evaluation_pkg AS
+
+  -- Procedure to update evaluation and evaluation details of a specific employee
+  PROCEDURE update_evaluation (
+    p_employee_id IN NUMBER,
+    p_new_deliveries_weight IN NUMBER, -- new deliveries weight in evaluationWeight
+    p_new_sales_weight IN NUMBER, -- new sales weight in evaluationWeight
+    p_new_leads_weight IN NUMBER -- new leads weight in evaluationWeight
+  ) AS
+    -- Variables to store evaluation and evaluation detail IDs
+    l_weight_id NUMBER; -- variable to store weight_id
+    l_eval_id NUMBER; -- variable to store evaluation_id
+    -- l_evaldetail_id NUMBER; 
+    -- Variable to store the calculated evaluation total score
+    l_total NUMBER;
+  BEGIN
+
+    -- Get weight ID for the employee
+    SELECT weight_id
+    INTO l_weight_id
+    FROM Employee
+    WHERE employee_id = p_employee_id;
+
+    -- Get the evaluation ID for the employee
+    SELECT evaluation_id
+    INTO l_eval_id
+    FROM evaluation
+    WHERE employee_id = p_employee_id AND rownum = 1;
+
+    -- -- Get the evaluation detail ID with evaluation ID for the employee
+    -- -- Should be 4-5 evaluation_detail_id for each evaluation_id
+    -- SELECT evaluation_detail_id
+    -- INTO l_evaldetail_id
+    -- FROM evaluationdetail
+    -- WHERE evaluation_evaluation_id = l_eval_id;
+
+
+
+    -- UPDATE evaluationWeight table
+    UPDATE evaluationWeight
+    SET deliveries = p_new_deliveries_weight, sales = p_new_sales_weight, leads = p_new_leads_weight
+    WHERE weight_id = l_weight_id;
+
+    -- Recalculate the evaluation score based on the new weight
+    SELECT 
+    (
+        SELECT SUM(deliveries * deliveries_eval * p_new_deliveries_weight + sales * sales_eval * p_new_sales_weight + leads * leads_eval * p_new_leads_weight) 
+        FROM evaluationdetail 
+        WHERE evaluation_evaluation_id = l_eval_id
+    )
+    INTO l_total
+    FROM evaluation
+    WHERE evaluation_id = l_eval_id;
+
+    -- Update the evaluation score for the employee
+    UPDATE evaluation
+    SET acc_score = acc_score - total + l_total, total = l_total
+    WHERE evaluation_id = l_eval_id;
+
+  END update_evaluation;
+
+END update_evaluation_pkg;
+/

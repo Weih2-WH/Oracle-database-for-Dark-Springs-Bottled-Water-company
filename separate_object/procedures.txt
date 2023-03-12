@@ -1,0 +1,52 @@
+CREATE OR REPLACE PROCEDURE add_new_product (v_product_id IN product.product_id%TYPE,v_price IN product.price%TYPE) AS 
+    id_already_exist EXCEPTION;
+    product_id_c product.product_id%TYPE;
+BEGIN
+    dbms_output.put_line('add_new_product : ');
+    insert into product values(v_product_id,v_price);
+    commit;
+     DBMS_OUTPUT.PUT_LINE('insert success');
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN
+    DBMS_OUTPUT.PUT_LINE('ID already exist.');
+    WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('Something wrong!');
+END;
+/
+
+SET SERVEROUTPUT ON;
+
+
+select * from  product;
+insert into product
+values(1,45);
+
+execute add_new_product(2,90);
+
+delete from product where product_id = 2;
+
+CREATE OR REPLACE PROCEDURE employee_leave (v_employee_id IN employee.employee_id%TYPE,v_leave_date IN employee.leave_date%TYPE) AS 
+    wrong_employee_id EXCEPTION;
+    employee_id_c employee.employee_id%TYPE;
+BEGIN
+    dbms_output.put_line('add_new_product : ');
+    Select employee_id INTO employee_id_c from employee where employee_id = v_employee_id;
+    IF employee_id_c is null then
+	RAISE wrong_employee_id;
+    END IF;
+    dbms_output.put_line('update Valide: ');
+    UPDATE employee SET leave_date = v_leave_date where employee_id = v_employee_id ;
+    dbms_output.put_line('UPDATE Complet: ');
+    commit;
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN
+    DBMS_OUTPUT.PUT_LINE('ID already exist.');
+    WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('Something wrong!');
+END;
+/
+
+select * from employee;
+alter session set nls_date_language='american';
+
+execute employee_leave(1,'23-FEB-23')

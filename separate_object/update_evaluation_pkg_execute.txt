@@ -1,0 +1,8 @@
+BEGIN
+  update_evaluation_pkg.update_evaluation(
+    p_employee_id => 103,
+    p_new_deliveries_weight => 15,
+    p_new_sales_weight => 4,
+    p_new_leads_weight => 30
+  );
+END;

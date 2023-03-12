@@ -1,0 +1,3 @@
+CREATE OR REPLACE TRIGGER check_jobsBEFORE INSERT OR UPDATE ON RouteFOR EACH ROWDECLARE   count_jobs NUMBER;   too_many_jobs EXCEPTION;BEGIN   SELECT count(*) INTO count_jobs FROM Route WHERE employee_id = :new.employee_id;   IF count_jobs >= 3 THEN     RAISE too_many_jobs;   END IF;      EXCEPTION   WHEN too_many_jobs THEN      DBMS_OUTPUT.PUT_LINE('Too many jobs for '|| :new.employee_id);END;/
+
+CREATE OR REPLACE TRIGGER delete_evaluationBEFORE DELETE ON EvaluationFOR EACH ROWBEGIN  DELETE FROM EvaluationDetail WHERE evaluation_evaluation_id = :old.evaluation_id;END;/

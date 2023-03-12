@@ -1,0 +1,10 @@
+-- return the bill number of given month
+create or replace function count_bill(month_number number) return number
+as
+  bill_count number;
+begin
+    select count(*) into bill_count from bill 
+    where TRIM(LEADING '0' FROM TO_CHAR(due_date, 'MM-YYYY')) = month_number;
+    return bill_count;
+end;
+

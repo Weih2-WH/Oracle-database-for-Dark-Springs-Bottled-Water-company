@@ -1,0 +1,35 @@
+/*
+The evaluation information of th eemployees who have left will be reserved for 3 years,
+if exceeding, the relevant evaluation row will be deleted.
+*/
+
+create or replace procedure drop_oldstaff_evaluation(v_date in out date) as 
+    cursor c_leave_eva is 
+    select em.employee_id, ev.evaluation_id, em.leave_date
+    from employee em
+    left join evaluation ev
+    on em.employee_id = ev.employee_id
+    where em.leave_date is not null;
+begin
+    select sysdate into v_date from dual;
+    for c in c_leave_eva loop
+        if v_date - c.leave_date >= 3*365 then 
+            delete from evaluation 
+            where evaluation.employee_id = c.employee_id;
+        end if;
+    end loop;
+end;
+
+-- 
+BEGIN DBMS_SCHEDULER.DROP_JOB('yearly_delete_evaluation');
+END;
+
+begin
+  dbms_scheduler.create_job(
+  job_name   => 'yearly_delete_evaluation',
+  job_type   => 'STORED_PROCEDURE',
+  job_action => 'drop_oldstaff_evaluation', -- 这是一个测试的存储过程
+  start_date =>  SYSDATE,
+  repeat_interval => 'FREQ = YEARLY; INTERVAL = 1',
+  comments   => 'evaluation_drop');
+end;

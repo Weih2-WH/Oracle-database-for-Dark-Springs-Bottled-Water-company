@@ -1,0 +1,5 @@
+CREATE OR REPLACE VIEW delivery_route_view AS
+
+SELECT r.route_id, r.employee_id, c.customer_id, s. service_id
+FROM route r JOIN serviceDetail s ON r.route_id = s.route_id
+JOIN customer c ON c.customer_id = s.Customer_customer_id;
